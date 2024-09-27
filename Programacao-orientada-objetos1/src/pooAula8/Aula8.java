@@ -17,6 +17,7 @@ public class Aula8 {
 
         p2.setCurso("Informatica");
         p3.setSalario(2550.5f);
+        p4.setSetor("Estoque");
 
         System.out.println(p1.toString());
         System.out.println(p2.toString());
