@@ -14,8 +14,8 @@ public class Caneta {
         System.out.println("Está tampada? " + this.tampada);
     }
 
-    void nomeModelo(String nomeModelo){
-        this.modelo = nomeModelo;
+    void nomeModelo(String nameModel){
+        this.modelo = nameModel;
     }
 
     void rabiscar(){
