@@ -11,7 +11,6 @@ public class Aula4 {
         p1.pegarEmprestimo(1000);
         p1.estadoAtual();
 
-        
         ContaBanco p2 = new ContaBanco();
         p2.setNumConta(22222);
         p2.setDono("Creuza");
