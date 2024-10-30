@@ -7,6 +7,52 @@ public class ContaBanco {
     private float saldo;
     private boolean status;
 
+    //Métodos Especiais
+    public ContaBanco(){
+        this.saldo = 0;
+        this.status = false;
+    }
+
+    public void setNumConta(int n){
+        this.numConta = n;
+    }
+
+    public int getNumConta(){
+        return this.numConta;
+    }
+
+    public void setTipo(String t){
+        this.tipo = t;
+    }
+
+    public String getTipo(){
+        return this.tipo;
+    }
+
+    public void setDono(String d){
+        this.dono = d;
+    }
+
+    public String getDono(){
+        return this.dono;
+    }
+
+    public void setSaldo(float s){
+        this.saldo = s;
+    }
+
+    public float getSaldo(){
+        return this.saldo;
+    }
+
+    public void setStatus(boolean st){
+        this.status = st;
+    }
+
+    public boolean getStatus(){
+        return this.status;
+    }
+
     //Métodos Personalizados
     public void estadoAtual(){
         System.out.println("--------------------------------");
@@ -75,52 +121,6 @@ public class ContaBanco {
         }else{
             System.out.println("Impossivel pagar uma conta fechado");
         }
-    }
-
-    //Métodos Especiais
-    public ContaBanco(){
-        this.saldo = 0;
-        this.status = false;
-    }
-
-    public void setNumConta(int n){
-        this.numConta = n;
-    }
-
-    public int getNumConta(){
-        return this.numConta;
-    }
-
-    public void setTipo(String t){
-        this.tipo = t;
-    }
-
-    public String getTipo(){
-        return this.tipo;
-    }
-
-    public void setDono(String d){
-        this.dono = d;
-    }
-
-    public String getDono(){
-        return this.dono;
-    }
-
-    public void setSaldo(float s){
-        this.saldo = s;
-    }
-
-    public float getSaldo(){
-        return this.saldo;
-    }
-
-    public void setStatus(boolean st){
-        this.status = st;
-    }
-
-    public boolean getStatus(){
-        return this.status;
     }
 
 }
