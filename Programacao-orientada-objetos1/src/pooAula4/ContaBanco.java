@@ -9,6 +9,7 @@ public class ContaBanco {
 
     //Métodos Especiais
     public ContaBanco(){
+        this.dono = "none";
         this.saldo = 0;
         this.status = false;
     } 

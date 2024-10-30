@@ -2,26 +2,16 @@ package pooAula4;
 public class Aula4 {
     public static void main(String[] args) {
         ContaBanco p1 = new ContaBanco();
-        //p1.estadoAtual();
-        p1.depositar(30);
+        
         p1.abrirConta("CC");
+        p1.setDono("Alan");
         p1.estadoAtual();
         p1.depositar(30);
         p1.estadoAtual();
         p1.pegarEmprestimo(1000);
         p1.estadoAtual();
-        
-        
-        /**
-        p1.setNumConta(2121212342);
-        p1.setDono("Jubileu");
-        p1.abrirConta("CC");
-        p1.estadoAtual();
-        p1.depositar(100);
-        p1.estadoAtual();
-        */
 
-        /** 
+        
         ContaBanco p2 = new ContaBanco();
         p2.setNumConta(22222);
         p2.setDono("Creuza");
@@ -35,7 +25,5 @@ public class Aula4 {
 
         p1.estadoAtual();
         p2.estadoAtual();
-        */
-
     }
 }
