@@ -11,7 +11,7 @@ public class ContaBanco {
     public ContaBanco(){
         this.saldo = 0;
         this.status = false;
-    }
+    } 
 
     public void setNumConta(int n){
         this.numConta = n;
@@ -73,6 +73,13 @@ public class ContaBanco {
             this.setSaldo(150);
         }
         System.out.println("Conta aberta com sucesso");
+    }
+
+    public void pegarEmprestimo(int vEmprestimo){
+        if(this.getStatus() == true){
+            this.setSaldo(this.getSaldo() + vEmprestimo);
+            System.out.println("Emprestimo do valor de " + vEmprestimo + " realizado com sucesso");
+        }
     }
 
     public void fecharConta(){
