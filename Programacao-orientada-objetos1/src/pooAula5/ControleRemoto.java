@@ -37,11 +37,12 @@ public class ControleRemoto implements Controlador {
         this.tocando = tocando;        
     }
 
+    //Métodos abstratos
     @Override
     public void ligar() {
         this.setLigado(true);
     }
-
+    
     @Override
     public void desligar() {
         this.setLigado(false);
@@ -83,7 +84,7 @@ public class ControleRemoto implements Controlador {
     @Override
     public void ligarMudo() {
         if (this.getLigado() && this.getVolume() > 0){
-            this.setVolume(0);;
+            this.setVolume(0);
         }
     }
 
