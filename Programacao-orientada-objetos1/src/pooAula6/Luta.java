@@ -9,6 +9,39 @@ public class Luta {
     private int rounds;
     private boolean aprovada;
 
+    //Métodos Especiais
+
+    public Lutador getDesafiado() {
+        return desafiado;
+    }
+
+    public void setDesafiado(Lutador desafiado) {
+        this.desafiado = desafiado;
+    }
+
+    public Lutador getDesafiante() {
+        return desafiante;
+    }
+
+    public void setDesafiante(Lutador desafiante) {
+        this.desafiante = desafiante;
+    }
+
+    public int getRounds() {
+        return rounds;
+    }
+
+    public void setRounds(int rounds) {
+        this.rounds = rounds;
+    }
+
+    public boolean getAprovado() {
+        return aprovada;
+    }
+
+    public void setAprovado(boolean aprovado) {
+        this.aprovada = aprovado;
+    }
 
     //Métodos publicos
 
@@ -58,41 +91,5 @@ public class Luta {
             System.out.println("A luta não pode acontecer!");
         }
     }
-
-    public Lutador getDesafiado() {
-        return desafiado;
-    }
-
-    public void setDesafiado(Lutador desafiado) {
-        this.desafiado = desafiado;
-    }
-
-    public Lutador getDesafiante() {
-        return desafiante;
-    }
-
-    public void setDesafiante(Lutador desafiante) {
-        this.desafiante = desafiante;
-    }
-
-    public int getRounds() {
-        return rounds;
-    }
-
-    public void setRounds(int rounds) {
-        this.rounds = rounds;
-    }
-
-    public boolean isAprovado() {
-        return aprovada;
-    }
-
-    public void setAprovado(boolean aprovado) {
-        this.aprovada = aprovado;
-    }
-
-    //Métodos Especiais
-
-    
-
+  
 }

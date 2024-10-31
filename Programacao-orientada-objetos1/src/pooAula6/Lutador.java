@@ -13,38 +13,6 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
-    // Métodos Publicos
-
-     public void apresentar(){
-        System.out.println("----------------------------------------------------");
-        System.out.println("CHGOU A HORA! Apresentamos o lutador " + this.getNome());
-        System.out.println("Diretamente de " + this.getNacionalidade());
-        System.out.println("com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
-        System.out.println("pesando " + this.getPeso() + "Kg");
-        System.out.println(this.getVitoria() + " vitória");
-        System.out.println(this.getDerrotas()+ "derrotas e");
-        System.out.println(this.getEmpates() + " empates!");
-     }
-
-     public void status(){
-        System.out.println(this.getNome() + " é um peso " + getCategoria());
-        System.out.println("Ganhou " + this.getVitoria() + " vezes");
-        System.out.println("Perdeu " + this.getDerrotas() + " vezes");
-        System.out.println("Empatou " + this.getEmpates() + "vezes");
-     }
-
-     public void ganharLuta(){
-        this.setVitoria(this.getVitoria() + 1);
-     }
-
-     public void perderLuta(){
-
-     }
-
-     public void empatarLuta(){
-
-     }
-
     // Métodos Especiais
 
     public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em){
@@ -142,5 +110,37 @@ public class Lutador {
     public void setEmpates(int empates) {
         this.empates = empates;
     }
+
+    // Métodos Publicos
+
+     public void apresentar(){
+        System.out.println("----------------------------------------------------");
+        System.out.println("CHGOU A HORA! Apresentamos o lutador " + this.getNome());
+        System.out.println("Diretamente de " + this.getNacionalidade());
+        System.out.println("com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
+        System.out.println("pesando " + this.getPeso() + "Kg");
+        System.out.println(this.getVitoria() + " vitória");
+        System.out.println(this.getDerrotas()+ "derrotas e");
+        System.out.println(this.getEmpates() + " empates!");
+     }
+
+     public void status(){
+        System.out.println(this.getNome() + " é um peso " + getCategoria());
+        System.out.println("Ganhou " + this.getVitoria() + " vezes");
+        System.out.println("Perdeu " + this.getDerrotas() + " vezes");
+        System.out.println("Empatou " + this.getEmpates() + "vezes");
+     }
+
+     public void ganharLuta(){
+        this.setVitoria(this.getVitoria() + 1);
+     }
+
+     public void perderLuta(){
+
+     }
+
+     public void empatarLuta(){
+
+     }
 
 }
