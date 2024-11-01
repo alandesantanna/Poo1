@@ -5,10 +5,6 @@ public class Pessoa {
     private int idade;
     private String sexo;
 
-    public void fazerAniversario(){
-        this.idade++;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -33,11 +29,13 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
+    public void fazerAniversario(){
+        this.idade++;
+    }
+
     @Override
     public String toString() {
         return "Pessoa [" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
     }
 
-    
-    
 }
