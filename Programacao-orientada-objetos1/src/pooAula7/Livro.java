@@ -8,19 +8,13 @@ public class Livro implements Publicacao {
     private boolean aberto;
     private Pessoa leitor;
 
-    
-    public String detalhes() {
-        return "Livro{" + "titulo=" + titulo + "\n, autor=" + autor + "\n, totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
-                + ", aberto=" + aberto + "\n, leitor=" + leitor.getNome() + 
-                ", idade=" + leitor.getIdade() + 
-                ", sexo=" + leitor.getSexo() + "]";
-    }
-
     public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
-        this.leitor = leitor;
+        this.aberto = false;
+        this.pagAtual = 0;
+        this.leitor = leitor;   
     }
 
     public String getTitulo() {
@@ -71,6 +65,13 @@ public class Livro implements Publicacao {
         this.leitor = leitor;
     }
 
+    public String detalhes() {
+        return "Livro{ " + "\n, Titulo= " + titulo + "\n, Autor= " + autor + "\n, TotPaginas= " + totPaginas + ", PagAtual= " + pagAtual
+                + ", Aberto= " + aberto + "\n, Leitor= " + leitor.getNome() + 
+                ", Idade= " + leitor.getIdade() + 
+                ", Sexo= " + leitor.getSexo() + "]";
+    }
+
     @Override
     public void abrir() {
         
@@ -99,7 +100,5 @@ public class Livro implements Publicacao {
     public void voltarPag() {
         this.pagAtual--;
     }
-
-    
 
 }

@@ -5,10 +5,6 @@ public class Pessoa {
     private int idade;
     private String sexo;
 
-    public void fazerAniver(){
-        this.idade = this.idade++;
-    }
-
     public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
@@ -39,5 +35,8 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
+    public void fazerAniver(){
+        this.idade = this.idade++;
+    }
     
 }
