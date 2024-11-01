@@ -1,6 +1,6 @@
 package pooAula9;
 
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa{  
     private int matricula;
     private String curso;
     
@@ -23,6 +23,4 @@ public class Aluno extends Pessoa{
     public void setCurso(String curso) {
         this.curso = curso;
     }
-
-    
 }
