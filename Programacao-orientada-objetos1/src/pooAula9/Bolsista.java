@@ -3,15 +3,6 @@ package pooAula9;
 public class Bolsista extends Aluno{
     private float bolsa;
 
-    public void renovarBolsa(){
-        System.out.println("Renovando bolsa de " + this.nome);
-    }
-
-    @Override
-    public void pagarMensalidade(){
-        System.out.println(this.nome + " é bolsista! Pagamento facilitado");
-    }
-
     public float getBolsa() {
         return bolsa;
     }
@@ -20,4 +11,12 @@ public class Bolsista extends Aluno{
         this.bolsa = bolsa;
     }
     
+    public void renovarBolsa(){
+        System.out.println("Renovando bolsa de " + this.getNome());
+    }
+
+    @Override
+    public void pagarMensalidade(){
+        System.out.println(this.getNome() + " é bolsista! Pagamento facilitado");
+    }
 }

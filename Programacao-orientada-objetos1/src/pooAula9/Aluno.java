@@ -3,10 +3,6 @@ package pooAula9;
 public class Aluno extends Pessoa{  
     private int matricula;
     private String curso;
-    
-    public void pagarMensalidade(){
-        System.out.println("pagando mensalidade de aluno" + this.nome);
-    }
 
     public int getMatricula() {
         return matricula;
@@ -22,5 +18,9 @@ public class Aluno extends Pessoa{
 
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    public void pagarMensalidade(){
+        System.out.println("pagando mensalidade de aluno" + this.getNome());
     }
 }
